@@ -1,6 +1,6 @@
 <?php
 
-namespace Flightsadmin\LivewireCrud;
+namespace Hectoradmin\LivewireCrud;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Flightsadmin\LivewireCrud\Commands;
+namespace Hectoradmin\LivewireCrud\Commands;
 
-use Flightsadmin\LivewireCrud\ModelGenerator;
+use Hectoradmin\LivewireCrud\ModelGenerator;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;
