@@ -1,9 +1,9 @@
 <?php
 
-namespace Hectoradmin\LivewireCrud;;
+namespace Flightsadmin\LivewireCrud;;
 
-use Hectoradmin\LivewireCrud\Commands\LivewireCrudGenerator;
-use Hectoradmin\LivewireCrud\Commands\LivewireInstall;
+use Flightsadmin\LivewireCrud\Commands\LivewireCrudGenerator;
+use Flightsadmin\LivewireCrud\Commands\LivewireInstall;
 use Illuminate\Support\ServiceProvider;
 
 class LivewireCrudServiceProvider extends ServiceProvider

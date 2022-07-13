@@ -28,12 +28,12 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "Hectoradmin\\LivewireCrud\\": "src"
+            "Flightsadmin\\LivewireCrud\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Hectoradmin\\LivewireCrud\\Tests\\": "tests"
+            "Flightsadmin\\LivewireCrud\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Hectoradmin\\LivewireCrud\\LivewireCrudServiceProvider"
+                "Flightsadmin\\LivewireCrud\\LivewireCrudServiceProvider"
             ],
             "aliases": {
-                "LivewireCrud": "Hectoradmin\\LivewireCrud\\LivewireCrudFacade"
+                "LivewireCrud": "Flightsadmin\\LivewireCrud\\LivewireCrudFacade"
             }
         }
     }

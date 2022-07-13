@@ -1,6 +1,6 @@
 <?php
 
-namespace Hectoradmin\LivewireCrud;
+namespace Flightsadmin\LivewireCrud;
 
 use Illuminate\Support\Facades\Facade;
 

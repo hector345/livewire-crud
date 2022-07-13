@@ -1,9 +1,9 @@
 <?php
 
-namespace Hectoradmin\LivewireCrud\Tests;
+namespace Flightsadmin\LivewireCrud\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Hectoradmin\LivewireCrud\LivewireCrudServiceProvider;
+use Flightsadmin\LivewireCrud\LivewireCrudServiceProvider;
 
 class ExampleTest extends TestCase
 {

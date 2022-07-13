@@ -1,6 +1,6 @@
 <?php
 
-namespace Hectoradmin\LivewireCrud\Commands;
+namespace Flightsadmin\LivewireCrud\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
