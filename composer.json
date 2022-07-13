@@ -1,5 +1,5 @@
 {
-    "name": "flightsadmin/livewire-crud",
+    "name": "hector345/livewire-crud-vuexy",
     "description": "Scaffold Livewire Components, migrations, factory and crud in one command based on database tables",
     "keywords": [
         "flightsadmin",
