@@ -320,7 +320,7 @@ abstract class LivewireGeneratorCommand extends Command
     {
         if (!(view()->exists($this->layout))) {
 
-            $this->info('Creating Layout ...');
+            $this->info('Creación de diseño ...');
 
             if ($this->layout == 'layouts.app') {
                 $this->files->copy($this->getStub('layouts/app', false), $this->_getLayoutPath());

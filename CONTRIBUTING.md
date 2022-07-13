@@ -1,55 +1,55 @@
-# Contributing
+# contribuyendo
 
-Contributions are **welcome** and will be fully **credited**.
+Las contribuciones son **bienvenidas** y serán **acreditadas** en su totalidad.
 
-Please read and understand the contribution guide before creating an issue or pull request.
+Lea y comprenda la guía de contribución antes de crear un problema o una solicitud de extracción.
 
-## Etiquette
+## Etiqueta
 
-This project is open source, and as such, the maintainers give their free time to build and maintain the source code
-held within. They make the code freely available in the hope that it will be of use to other developers. It would be
-extremely unfair for them to suffer abuse or anger for their hard work.
+Este proyecto es de código abierto y, como tal, los mantenedores dan su tiempo libre para construir y mantener el código fuente.
+sostenido dentro. Hacen que el código esté disponible gratuitamente con la esperanza de que sea útil para otros desarrolladores. Podría ser
+extremadamente injusto que sufran abuso o enojo por su arduo trabajo.
 
-Please be considerate towards maintainers when raising issues or presenting pull requests. Let's show the
-world that developers are civilized and selfless people.
+Sea considerado con los mantenedores cuando planteen problemas o presenten solicitudes de incorporación de cambios. Vamos a mostrar el
+mundo que los desarrolladores son personas civilizadas y desinteresadas.
 
-It's the duty of the maintainer to ensure that all submissions to the project are of sufficient
-quality to benefit the project. Many developers have different skillsets, strengths, and weaknesses. Respect the maintainer's decision, and do not be upset or abusive if your submission is not used.
+Es deber del mantenedor asegurarse de que todos los envíos al proyecto sean de suficiente
+calidad en beneficio del proyecto. Muchos desarrolladores tienen diferentes conjuntos de habilidades, fortalezas y debilidades. Respete la decisión del mantenedor y no se moleste ni sea abusivo si no se utiliza su envío.
 
-## Viability
+## Viabilidad
 
-When requesting or submitting new features, first consider whether it might be useful to others. Open
-source projects are used by many developers, who may have entirely different needs to your own. Think about
-whether or not your feature is likely to be used by other users of the project.
+Al solicitar o enviar nuevas funciones, primero considere si podría ser útil para otros. Abierto
+Muchos desarrolladores utilizan los proyectos fuente, quienes pueden tener necesidades completamente diferentes a las suyas. Pensar en
+si es probable o no que su característica sea utilizada por otros usuarios del proyecto.
 
-## Procedure
+## Procedimiento
 
-Before filing an issue:
+Antes de presentar un problema:
 
-- Attempt to replicate the problem, to ensure that it wasn't a coincidental incident.
-- Check to make sure your feature suggestion isn't already present within the project.
-- Check the pull requests tab to ensure that the bug doesn't have a fix in progress.
-- Check the pull requests tab to ensure that the feature isn't already in progress.
+- Intente replicar el problema, para asegurarse de que no fue un incidente coincidente.
+- Verifique que su sugerencia de función no esté ya presente en el proyecto.
+- Verifique la pestaña de solicitudes de incorporación de cambios para asegurarse de que el error no tenga una corrección en curso.
+- Verifique la pestaña de solicitudes de incorporación de cambios para asegurarse de que la característica no esté ya en progreso.
 
-Before submitting a pull request:
+Antes de enviar una solicitud de extracción:
 
-- Check the codebase to ensure that your feature doesn't already exist.
-- Check the pull requests to ensure that another person hasn't already submitted the feature or fix.
+- Verifique la base de código para asegurarse de que su función aún no exista.
+- Verifique las solicitudes de incorporación de cambios para asegurarse de que otra persona no haya enviado ya la característica o corrección.
 
-## Requirements
+## Requisitos
 
-If the project maintainer has any additional requirements, you will find them listed here.
+Si el mantenedor del proyecto tiene requisitos adicionales, los encontrará enumerados aquí.
 
-- **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)** - The easiest way to apply the conventions is to install [PHP Code Sniffer](https://pear.php.net/package/PHP_CodeSniffer).
+- **[Estándar de codificación PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)** - El más fácil La forma de aplicar las convenciones es instalar [PHP Code Sniffer](https://pear.php.net/package/PHP_CodeSniffer).
 
-- **Add tests!** - Your patch won't be accepted if it doesn't have tests.
+- **¡Agregue pruebas!** - Su parche no será aceptado si no tiene pruebas.
 
-- **Document any change in behaviour** - Make sure the `README.md` and any other relevant documentation are kept up-to-date.
+- **Documente cualquier cambio en el comportamiento** - Asegúrese de que el `README.md` y cualquier otra documentación relevante se mantengan actualizados.
 
-- **Consider our release cycle** - We try to follow [SemVer v2.0.0](https://semver.org/). Randomly breaking public APIs is not an option.
+- **Considere nuestro ciclo de lanzamiento** - Intentamos seguir [SemVer v2.0.0](https://semver.org/). Romper aleatoriamente las API públicas no es una opción.
 
-- **One pull request per feature** - If you want to do more than one thing, send multiple pull requests.
+- **Una solicitud de extracción por característica** - Si desea hacer más de una cosa, envíe varias solicitudes de extracción.
 
-- **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
+- **Envía un historial coherente** - Asegúrate de que cada compromiso individual en tu solicitud de extracción sea significativo. Si tuvo que realizar varias confirmaciones intermedias durante el desarrollo, [aplástelas](https://www.git-scm.com/book/en/v2/Git-Tools-Rewrite-History#Changing-Multiple-Commit-Messages ) antes de enviar.
 
-**Happy coding**!
+**¡Feliz codificación**!

@@ -6,22 +6,35 @@ return [
     |--------------------------------------------------------------------------
     | Stubs Path
     |--------------------------------------------------------------------------
-    | The stubs path directory to generate crud. You may configure your
-    | stubs paths here, allowing you to customize the own stubs of the
-    | model,controller or view. Or, you may simply stick with the CrudGenerator defaults!
-    | Example: 'stub_path' => resource_path('path/to/views/stubs/')
-    | Default: "default"
+    El directorio de ruta de stubs para generar crud. 
+    Puede configurar sus rutas de stubs aquí, lo que le permite personalizar los 
+    propios stubs del modelo, controlador o vista. ¡O simplemente puede quedarse 
+    con los valores predeterminados de CrudGenerator! 
+    Ejemplo: 'stub_path' => resource_path('path/to/views/stubs/') 
+    
+    Predeterminado: "predeterminado"
+    
+    Default: "default"
     */
-
+    /*
+     |----------------------------------------------------------------- -------------------------
+     | Ruta de stubs
+     |----------------------------------------------------------------- -------------------------
+     | El directorio de ruta de stubs para generar crud. Puede configurar su
+     | rutas de stubs aquí, lo que le permite personalizar los propios stubs del
+     | modelo, controlador o vista. ¡O simplemente puede quedarse con los valores predeterminados de CrudGenerator!
+     | Ejemplo: 'stub_path' => resource_path('ruta/a/vistas/stubs/')
+     | Predeterminado: "predeterminado"
+     */
     'stub_path' => 'default',
 
     /*
-    |--------------------------------------------------------------------------
-    | Application Layout
-    |--------------------------------------------------------------------------
-    | This value is the name of your application layout. This value is used when creating
-    | views for crud. Default will be the "layouts.app".
-    */
+     |----------------------------------------------------------------- -------------------------
+     | Diseño de la aplicación
+     |----------------------------------------------------------------- -------------------------
+     | Este valor es el nombre del diseño de su aplicación. Este valor se utiliza al crear
+     | vistas para crud. El valor predeterminado será "layouts.app".
+     */
 
     'layout' => 'layouts.app',
 
@@ -36,6 +49,11 @@ return [
             'password',
             'email_verified_at',
             'remember_token',
+            'created_at',
+            'updated_at',
+            'deleted_at',
+            'dominio',
+            'borrado',
             'created_at',
             'updated_at',
             'deleted_at',

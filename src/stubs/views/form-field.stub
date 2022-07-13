@@ -1,4 +1,8 @@
-            <div class="form-group">
-                <label for="{{column}}"></label>
-                <input wire:model="{{column}}" type="{{type}}" class="form-control" id="{{column}}" placeholder="{{title}}">@error('{{column}}') <span class="error text-danger">{{ $message }}</span> @enderror
-            </div>
+<div class="col-12 col-md-6">
+    <label class="form-label" for="{{column}}">{{title}}</label>
+    <input wire:model="{{column}}" type="{{type}}" class="form-control" id="{{column}}" placeholder="{{title}}"
+        data-msg="Por favor ingrese su {{title}}" />
+    @error('{{column}}')
+    <div class="invalid-feedback">{{ $message }}</div>
+    @enderror
+</div>

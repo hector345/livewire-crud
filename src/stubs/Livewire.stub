@@ -43,7 +43,7 @@ class {{modelName}}s extends Component
         
         $this->resetInput();
 		$this->emit('closeModal');
-		session()->flash('message', '{{modelName}} Successfully created.');
+		session()->flash('message', 'Se ha actualizado creado {{modelName}} exitosamente.');
     }
 
     public function edit($id)
@@ -67,7 +67,7 @@ class {{modelName}}s extends Component
 
             $this->resetInput();
             $this->updateMode = false;
-			session()->flash('message', '{{modelName}} Successfully updated.');
+			session()->flash('message', 'Se ha actualizado {{modelName}} exitosamente.');
         }
     }
 
@@ -75,7 +75,8 @@ class {{modelName}}s extends Component
     {
         if ($id) {
             $record = {{modelName}}::where('id', $id);
-            $record->delete();
+              //$record->delete();
+            $record->update(['borrado' => 1]);
         }
     }
 }

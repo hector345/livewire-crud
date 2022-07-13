@@ -17,7 +17,7 @@ class LivewireCrudGenerator extends LivewireGeneratorCommand
 
     protected $signature = 'crud:generate {name : Table name}';
 
-    protected $description = 'Generate Livewire Component and CRUD operations';
+    protected $description = 'Generar operaciones de componente Livewire y CRUD';
 
     /**
      * Execute the console command.
@@ -71,7 +71,7 @@ class LivewireCrudGenerator extends LivewireGeneratorCommand
         }
 		
         $this->info('');
-        $this->info('Livewire Component & CRUD Generated Successfully.');
+        $this->info('Componente Livewire y CRUD generados con éxito.');
 
         return true;
     }
@@ -86,7 +86,7 @@ class LivewireCrudGenerator extends LivewireGeneratorCommand
 		$livewirePath = $this->_getLivewirePath($this->name);
         $factoryPath = $this->_getFactoryPath($this->name);
 
-        if ($this->files->exists($livewirePath) && $this->ask("Livewire Component ". Str::studly(Str::singular($this->table)) ."Component Already exist. Do you want overwrite (y/n)?", 'y') == 'n') {
+        if ($this->files->exists($livewirePath) && $this->ask("Livewire Component ". Str::studly(Str::singular($this->table)) ."Componente Ya existe. ¿Desea sobrescribir?(y/n)", 'y') == 'n') {
             return $this;
         }
 
@@ -102,11 +102,11 @@ class LivewireCrudGenerator extends LivewireGeneratorCommand
         $livewireTemplate = str_replace(
             array_keys($replace), array_values($replace), $this->getStub('Livewire')
         );
-        $this->warn('Creating: <info>Livewire Component...</info>');
+        $this->warn('Creando: <info>Livewire Component...</info>');
         $this->write($livewirePath, $livewireTemplate);
-		$this->warn('Creating: <info>Model...</info>');
+		$this->warn('Creando: <info>Model...</info>');
         $this->write($modelPath, $modelTemplate);
-        $this->warn('Creating: <info>Factories, Please edit before running Factory ...</info>');
+        $this->warn('Creando: <info>Factories, Edite antes de correr las Factory ...</info>');
         $this->write($factoryPath, $factoryTemplate);
 
         return $this;
@@ -119,7 +119,7 @@ class LivewireCrudGenerator extends LivewireGeneratorCommand
      */
     protected function buildViews()
     {
-        $this->warn('Creating:<info> Views ...</info>');
+        $this->warn('Creando:<info> Views ...</info>');
 
         $tableHead = "\n";
         $tableBody = "\n";

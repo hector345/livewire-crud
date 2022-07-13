@@ -1,20 +1,19 @@
 <!-- Modal -->
-<div wire:ignore.self class="modal fade" id="createDataModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="createDataModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div wire:ignore.self class="modal fade text-start" id="createDataModal" tabindex="-1" aria-labelledby="createDataModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="createDataModalLabel">Create New {{modelTitle}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true close-btn">×</span>
-                </button>
+                <h4 class="modal-title" id="createDataModalLabel">Crear Nuevo {{modelTitle}}</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-           <div class="modal-body">
-				<form>{{form}}
+            <div class="modal-body">
+                <form>{{form}}
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
-                <button type="button" wire:click.prevent="store()" class="btn btn-primary close-modal">Save</button>
+                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" wire:click.prevent="store()" class="btn btn-primary close-modal">Guardar</button>
             </div>
         </div>
     </div>

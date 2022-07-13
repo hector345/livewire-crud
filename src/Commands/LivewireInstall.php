@@ -25,8 +25,8 @@ class LivewireInstall extends Command
 		(new Filesystem)->ensureDirectoryExists(app_path('Models'));
 		(new Filesystem)->ensureDirectoryExists(resource_path('views/livewire'));
 		
-        if ($this->confirm('This will delete compiled assets in public folder. It will Re-Compile this. Do you want to proceed?') == 'yes') {        
-			if ($this->confirm('Do you want to scaffold Authentication files? Only skip if you have authentication system on your App') == 'yes') {
+        if ($this->confirm('Esto eliminará los activos compilados en la carpeta pública. Volverá a compilar esto. Quieres proceder?') == 'yes') {        
+			if ($this->confirm('¿Quieres andamios archivos de autenticación? Omita solo si tiene un sistema de autenticación en su aplicación') == 'yes') {
 					Artisan::call('ui:auth', [], $this->getOutput());
 			}
 		$routeFile = base_path('routes/web.php');
@@ -34,14 +34,15 @@ class LivewireInstall extends Command
         if (!str_contains($string, '//Route Hooks - Do not delete//')) {
 			file_put_contents($routeFile, "\n//Route Hooks - Do not delete//", FILE_APPEND);
 		}
-        $deleteFiles = [
-            'resources/sass',
-            'resources/css',
-            'resources/js',
-            'public/css',
-            'public/js',
-            'public/fonts',
-        ];
+        $deleteFiles = [];
+        // $deleteFiles = [
+        //     'resources/sass',
+        //     'resources/css',
+        //     'resources/js',
+        //     'public/css',
+        //     'public/js',
+        //     'public/fonts',
+        // ];
 
         foreach ($deleteFiles as $deleteFile) {
             if ($this->filesystem->exists($deleteFile)) {
@@ -71,9 +72,9 @@ class LivewireInstall extends Command
         });
         $this->info('node_modules files Removed');
         $this->info('');
-        $this->warn('All set, run <info>php artisan crud:generate {table-name}</info> to build your CRUD');		
+        $this->warn('Todo listo, corre <info>php artisan crud:generate {table-name}</info> para construir su CRUD');		
 	  }
-		else $this->warn('Installation Aborted, No file was changed');
+		else $this->warn('Instalación cancelada, no se modificó ningún archivo');
     }
 	
 	public function generateFiles()
@@ -88,7 +89,7 @@ class LivewireInstall extends Command
 
             $this->filesystem->put($filePath, $this->replace($file->getContents()));
 
-            $this->warn('Generated file: <info>' . $filePath . '</info>');
+            $this->warn('Archivo Generado: <info>' . $filePath . '</info>');
         }
     }
 
