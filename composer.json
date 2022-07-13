@@ -1,17 +1,17 @@
 {
-    "name": "flightsadmin/livewire-crud",
+    "name": "hector345/livewire-crud",
     "description": "Scaffold Livewire Components, migrations, factory and crud in one command based on database tables",
     "keywords": [
-        "flightsadmin",
+        "hector345",
         "livewire-crud"
     ],
-    "homepage": "https://github.com/flightsadmin/livewire-crud",
+    "homepage": "https://github.com/hector345/livewire-crud",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "George Chitechi",
-            "email": "george@flightsadmin.com",
+            "email": "george@hector345.com",
             "role": "Developer"
         }
     ],
