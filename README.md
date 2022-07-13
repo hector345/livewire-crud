@@ -13,7 +13,7 @@ More detailed documentation can ne found at [livewire-crud](https://flightsadmin
 You can install the package via [Composer](https://getcomposer.org/):
 
 ```bash
-composer require flightsadmin/livewire-crud
+composer require hector345/livewire-crud
 ```
 
 ## Usage
