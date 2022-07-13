@@ -1,53 +1,24 @@
 {
-    "name": "hector345/livewire-crud",
-    "description": "Scaffold Livewire Components, migrations, factory and crud in one command based on database tables",
-    "keywords": [
-        "hector345",
-        "livewire-crud"
-    ],
-    "homepage": "https://github.com/hector345/livewire-crud",
+    "name": "hp/livewire-crud-vuexy",
+    "description": "crea un crud",
+    "type": "libreria",
     "license": "MIT",
-    "type": "library",
-    "authors": [
-        {
-            "name": "George Chitechi",
-            "email": "george@hector345.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "laravel/framework": "^6.0|^7.0|^8.0|^9.0",
-        "laravel/ui": "^2|^3",
-        "livewire/livewire": "^2"
-    },
-    "require-dev": {},
     "autoload": {
         "psr-4": {
-            "Flightsadmin\\LivewireCrud\\": "src"
+            "Hp\\LivewireCrudVuexy\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Flightsadmin\\LivewireCrud\\Tests\\": "tests"
+    "authors": [
+        {
+            "name": "George Chitechi"
+        },
+        {
+            "name": "Hector Espinoza"
         }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Flightsadmin\\LivewireCrud\\LivewireCrudServiceProvider"
-            ],
-            "aliases": {
-                "LivewireCrud": "Flightsadmin\\LivewireCrud\\LivewireCrudFacade"
-            }
-        }
+    ],
+    "require": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hector345/livewire-crud"
     }
 }
